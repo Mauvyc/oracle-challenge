@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-text {
+    font-size: 24px;
+    font-weight: bold;
+    color: #003366;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    margin: auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% - 400px); /* Restar el ancho de la sección de salida */
+    padding: 20px;
+    border-right: 1px solid #ccc;
+}
+
+.output-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25%; /* Ancho fijo */
+    height: 100%; /* Altura fija */
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #003366;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    font-size: 16px;
+    resize: none;
+    border: none;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#encryptButton {
+    background-color: #003366;
+    color: #fff;
+}
+
+#decryptButton {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.note {
+    font-size: 12px;
+    color: #666;
+}
+
+.output-message {
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.output-message img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.output-message p {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .input-section,
+    .output-section {
+        width: 100%;
+        padding: 20px;
+        border-right: none;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .output-section {
+        height: auto;
+        border-bottom: none;
+    }
+}
